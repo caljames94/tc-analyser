@@ -1,0 +1,13 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API Keys
+**/config/keys.js
+**/config/secrets.js
+
+# Node modules
+node_modules/
+
+*.log

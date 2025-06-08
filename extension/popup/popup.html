@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC Analyzer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/icons/icon48.png" alt="TC Analyzer Logo" class="logo">
+        <h1>TC Analyzer</h1>
+    </header>
+
+    <main>
+        <section id="status">
+            <h2>Analysis Status</h2>
+            <p id="statusMessage">Ready to analyze</p>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <div id="summaryContent">
+                <p>No analysis performed yet. Click 'Analyze' to start.</p>
+            </div>
+        </section>
+
+        <section id="actions">
+            <button id="analyzeBtn" class="primary-btn">Analyze</button>
+            <button id="emailBtn" class="secondary-btn">Email Representative</button>
+            <button id="settingsBtn" class="secondary-btn">Settings</button>
+        </section>
+
+        <section id="results">
+            <h2>Analysis Results</h2>
+            <div id="resultsContent">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TC Analyzer</p>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>

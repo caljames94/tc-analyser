@@ -1,0 +1,12 @@
+{
+  "name": "tc-analyzer-extension",
+  "version": "1.0.0",
+  "description": "Browser extension for TC Analyzer",
+  "main": "background/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {}
+}

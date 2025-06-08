@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 350px;
+  margin: 0;
+  padding: 15px;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: opacity 0.3s ease-in-out;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#status {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#statusMessage {
+  font-weight: bold;
+  margin: 0;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.primary-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #45a049;
+}
+
+.secondary-btn {
+  background-color: #008CBA;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #007B9A;
+}
+
+#actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.risk-score {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.low-risk {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.medium-risk {
+  background-color: #FFC107;
+  color: black;
+}
+
+.high-risk {
+  background-color: #F44336;
+  color: white;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.error {
+  color: #F44336;
+}
+
+footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #actions {
+    flex-direction: column;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}

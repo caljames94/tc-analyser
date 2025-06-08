@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC Analyzer Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <header>
+        <h1>TC Analyzer Options</h1>
+    </header>
+    <main>
+        <form id="optionsForm">
+            <section>
+                <h2>Location Information</h2>
+                <div class="form-group">
+                    <label for="postcode">Australian Postcode:</label>
+                    <input type="text" id="postcode" name="postcode" required pattern="[0-9]{4}">
+                </div>
+                <div class="form-group">
+                    <label for="contactMethod">Preferred Contact Method:</label>
+                    <select id="contactMethod" name="contactMethod">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="mail">Mail</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Analysis Preferences</h2>
+                <div class="form-group">
+                    <label for="sensitivity">Sensitivity Level:</label>
+                    <select id="sensitivity" name="sensitivity">
+                        <option value="strict">Strict</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="permissive">Permissive</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Prioritize Concerns:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacyAct" name="concerns" value="privacyAct">
+                        <label for="privacyAct">Australian Privacy Act Compliance</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="dataSharing" name="concerns" value="dataSharing">
+                        <label for="dataSharing">Data Sharing</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="userRights" name="concerns" value="userRights">
+                        <label for="userRights">User Rights</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notifications">Notification Preferences:</label>
+                    <select id="notifications" name="notifications">
+                        <option value="all">All Notifications</option>
+                        <option value="important">Important Only</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Data Management</h2>
+                <div class="form-group">
+                    <button type="button" id="viewHistory">View Analysis History</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="exportData">Export Data</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="clearCache">Clear Cached Analyses</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>Privacy Settings</h2>
+                <div class="form-group">
+                    <label for="dataRetention">Data Retention:</label>
+                    <select id="dataRetention" name="dataRetention">
+                        <option value="30">30 days</option>
+                        <option value="90">90 days</option>
+                        <option value="365">1 year</option>
+                        <option value="0">Indefinitely</option>
+                    </select>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="optOut" name="optOut">
+                    <label for="optOut">Opt-out of data collection</label>
+                </div>
+            </section>
+
+            <div class="form-group">
+                <button type="submit">Save Preferences</button>
+            </div>
+        </form>
+    </main>
+    <script src="options.js"></script>
+</body>
+</html>
